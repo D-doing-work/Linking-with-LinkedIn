@@ -12,7 +12,7 @@ img {
 
 body {
   font-family: Comfortaa;
-  background-image: url('/bg-spring.png');
+  background-image: url('bg-spring.png');
   background-size: auto;
   overflow-x: visible;
 }
