@@ -1,0 +1,65 @@
+
+div.picture-scrollbar {
+  background-color: rgba(220, 230, 241);
+  overflow: auto;
+  white-space: nowrap;
+  transition: background-color 1s;
+}
+
+div.picture-scrollbar img {
+  display: inline-block;
+  color: rgb(34, 59, 204);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+div.picture-scrollbar img:hover {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.pictures {
+  height: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  justify-content: start;
+  /* Hides vertical scrollbar for .pictures */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.pic1 {
+  cursor: pointer;
+  vertical-align: center;
+  -ms-transform: translateY(-5%);
+  transform: translateY(5%);
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.pic1 img {
+  width: 100%; /* Make the image fill the entire container width */
+  height: 100%; /* Make the image fill the entire container height */
+  border-radius: 50%; /* Make the image circular */
+}
+
+#drag1,
+#drag2,
+#drag3,
+#drag4,
+#drag5,
+#drag6,
+#drag7,
+#drag8,
+#drag9,
+#drag10
+ {
+  margin-top: 0;
+  border: none;
+}

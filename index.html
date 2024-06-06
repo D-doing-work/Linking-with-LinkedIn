@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="linkedin-logo.jpg">
+  <title>Linked | LinkedIn</title>
+  <link rel="stylesheet" href="/style/general.css">
+  <link rel="stylesheet" href="/style/header.css">
+  <link rel="stylesheet" href="/style/sidebar.css">
+  <link rel="stylesheet" href="/style/extra.css">
+  <link rel="stylesheet" href="/style/group-gridbox.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+  <script src="drag-and-drop.js" defer></script>
+  <script src="randomizeScrollbar.js" defer></script>
+
+</head>
+
+<body>
+  <div class="logo">
+    <a href="https://d-doing-work.github.io/LinkedIn-Linked/"><img class="title" src="/title-logo.png" /></a>
+  </div>
+  <div class="instructions">
+    <p><strong> Drag the pictures on the top to one of the boxes. Guess the team member's partner!</strong> </p>
+  </div>
+  <div>
+    <div class="picture-scrollbar">
+      <div class="pictures">
+        <div class="pic1">
+          <img src="people/Eleen Medina.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
+        </div>
+        <div class="pic1">
+          <img src="people/Cora Wahl.jpg" draggable="true" ondragstart="drag(event)" id="drag2">
+        </div>
+        <div class="pic1">
+          <img src="people/Jackie Day.jpeg" draggable="true" ondragstart="drag(event)" id="drag3">
+        </div>
+        <div class="pic1">
+          <img src="people/Tom Cherry.jpg" draggable="true" ondragstart="drag(event)" id="drag4">
+        </div>
+        <div class="pic1">
+          <img src="people/Sophia King.jpeg" draggable="true" ondragstart="drag(event)" id="drag5">
+        </div>
+        <div class="pic1">
+          <img src="people/Naomi Balaba.jpeg" draggable="true" ondragstart="drag(event)" id="drag6">
+        </div>
+        <div class="pic1">
+          <img src="people/Meagan Maguire.jpg" draggable="true" ondragstart="drag(event)" id="drag7">
+        </div>
+        <div class="pic1">
+          <img src="people/Mackenzie Haynes.jpg" draggable="true" ondragstart="drag(event)" id="drag8">
+        </div>
+        <div class="pic1">
+          <img src="people/Charlie Burd.jpg" draggable="true" ondragstart="drag(event)" id="drag9">
+        </div>
+        <div class="pic1">
+          <img src="people/Elyssa.png" draggable="true" ondragstart="drag(event)" id="drag10">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group-gridbox">
+    <div id="box1" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Diana Feng.jfif">
+    </div>
+    <div id="box2" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Lucas Meletis.jpeg">
+    </div>
+    <div id="box3" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Carrie Liu.jpeg">
+    </div>
+    <div id="box4" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Sean Cherry.jpeg">
+    </div>
+    <div id="box5" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Adriel Friedlender.jpeg">
+    </div>
+    <div id="box6" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Samuel Foley.jpg">
+    </div>
+    <div id="box7" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Alex Manzano.jpg">
+    </div>
+    <div id="box8" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Eavan McBride.jpg">
+    </div>
+    <div id="box9" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Ryan Rinderman.jpg">
+    </div>
+    <div id="box10" class="groupbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="people/Timothy Brown.JPG">
+    </div>
+  </div>
+
+  <button id="cherry">Submit</button>
+
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+      <h1> YOU WON!</h1>
+      <p> Please raise your hand and say "Guess What?! I've won!"</p>
+      <p>(っ＾▿＾)۶🍸🌟🍺٩(˘◡˘ ) </p>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h1>SO CLOSE! (ɔ◔-◔)ɔ </h1>
+      <p>Try again! You're almost there!</p>
+      <button id="tryAgain">Try Again</button>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
